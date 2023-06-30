@@ -1,0 +1,31 @@
+<body>
+  <div>
+    <h1>Lista de autos</h1>
+   
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Marca</th>
+              <th scope="col">Dirección</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for ( let  i=0; i< marcas.length; i++ ) { %>
+            <tr>
+              <th scope="row"><%= i %></th>
+              <td><%= marcas[i].make %></td>
+              <td><%= marcas[i].address %></td>
+            </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</body>

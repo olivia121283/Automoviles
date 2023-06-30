@@ -8,6 +8,8 @@ app.use(express.json())
 app.use(autosRoute)
 app.use(usersRoutes)
 app.use(makesRoutes)
+//app.set('view engine', 'ejs')
+//app.set("views", "./src/views")
 
 execute()
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h1>Lista de autos</h1>
+   
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Marca</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Version</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for ( let  i=0; i< autos.length; i++ ) { %>
+            <tr>
+              <th scope="row"><%= i %></th>
+              <td><%= autos[i].model %></td>
+              <td><%= autos[i].price %></td>
+              <td><%= autos[i].version %></td>
+            </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
